@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The DOM playground</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="greeting" onclick="changeImg()">
+    Hello There!
+​
+  </div>
+
+  <hr>
+  <div class="content">
+    Essentials:
+  </div>
+​
+  <div id="essentials" onclick="removes()">
+    <ul>
+      <li>milk</li>
+      <li id="selected">honey</li>
+      <li id="selected">water</li>
+      <li>wine</li>
+      <li>beer</li>
+    </ul>
+
+  </div>
+​
+  <div>
+    <img id = "pic" src="./images/honey.jpeg" height="60" width="60" alt="beer">
+  </div>
+​
+  <div id="ghosting" onmouseenter = "dele()"  onmouseleave = "again()" >
+    Touch me and I'll disappear!
+  </div>
+​
+  <div onmouseenter = "doubleWidth()" onmouseleave = "normalWidth()" id="resize" >
+    Touch me and I'll turn twice as wide!
+  </div>
+​
+  <input type="submit" value="Reset" id="reset" onclick="rese()"></input>
+​
+<ul>
+  <li class="todo list"></li>
+  <li class="todo list">Make coffee</li>
+​
+</ul>
+
+
+<ul class="to-do-items">
+
+
+
+</ul>
+
+<script src="exercises.js"></script>
+​
+</body>
+</html>
